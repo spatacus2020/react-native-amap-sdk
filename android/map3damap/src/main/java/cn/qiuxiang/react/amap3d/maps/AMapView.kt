@@ -165,7 +165,7 @@ class AMapView(context: Context) : MapView(context) {
         var rotation = currentCameraPosition.bearing
 
         if (target.hasKey("coordinate")) {
-            coordinate = target.getMap("coordinate").toLatLng()
+            coordinate = target.getMap("coordinate")!!.toLatLng()
         }
 
         if (target.hasKey("zoomLevel")) {

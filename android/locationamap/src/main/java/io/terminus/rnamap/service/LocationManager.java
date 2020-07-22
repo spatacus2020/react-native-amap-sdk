@@ -1,6 +1,5 @@
 package io.terminus.rnamap.service;
 
-import android.support.v7.appcompat.BuildConfig;
 import android.util.Log;
 
 import com.amap.api.location.AMapLocation;
@@ -16,6 +15,7 @@ import com.facebook.react.modules.core.DeviceEventManagerModule;
 
 import javax.annotation.Nullable;
 
+import io.terminus.rctamap.BuildConfig;
 import io.terminus.rnamap.AMapUtils;
 import io.terminus.rnamap.model.ErrorDO;
 import io.terminus.rnamap.model.LocationDO;
