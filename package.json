@@ -10,7 +10,7 @@
     "name": "@spatacus/react-native-amap-sdk",
     "license": "MIT",
     "author": "spatacus",
-    "version": "2.0.5",
+    "version": "2.0.6",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },

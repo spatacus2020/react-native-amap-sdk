@@ -16,7 +16,7 @@ amap 的文档参考https://github.com/qiuxiang/react-native-amap3d， 改了  m
 package.json的depencency中添加：
 
 ```
-  "@spatacus/react-native-amap-sdk": "2.0.5"
+  "@spatacus/react-native-amap-sdk": "2.0.6"
 ```
 
     或者
