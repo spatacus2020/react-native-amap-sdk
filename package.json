@@ -10,7 +10,7 @@
     "name": "@spatacus/react-native-amap-sdk",
     "license": "MIT",
     "author": "spatacus",
-    "version": "2.0.4",
+    "version": "2.0.5",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
@@ -25,5 +25,9 @@
         "prop-types": "15.6.1",
         "react-amap": "^1.2.8"
     },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/spatacus2020/react-native-amap-sdk"
+      },
     "description": "React Native AMap component for iOS + Android +Web"
 }

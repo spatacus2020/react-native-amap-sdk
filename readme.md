@@ -7,7 +7,7 @@ amap 的文档参考https://github.com/qiuxiang/react-native-amap3d， 改了  m
 
 ## Version
 
-** v 2.0.4 **
+** v 2.0.5 **
 
 ### 安装
 
@@ -16,14 +16,14 @@ amap 的文档参考https://github.com/qiuxiang/react-native-amap3d， 改了  m
 package.json的depencency中添加：
 
 ```
-  "@spatacus/react-native-amap-sdk": "2.0.4"
+  "@spatacus/react-native-amap-sdk": "2.0.5"
 ```
 
     或者
 
-    npm install @spatacus/react-native-amap-sdk@2.0.4 --save
+    npm install @spatacus/react-native-amap-sdk --save
 
-    yarn add @spatacus/react-native-amap-sdk@2.0.4
+    yarn add @spatacus/react-native-amap-sdk
 
 - 项目导入
 
