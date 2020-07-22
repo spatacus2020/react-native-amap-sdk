@@ -1,0 +1,29 @@
+{
+    "files": [
+        "android",
+        "ios",
+        "index.js",
+        "index.web.js",
+        "app",
+        "readme.md"
+    ],
+    "name": "@spatacus/react-native-amap-sdk",
+    "license": "MIT",
+    "author": "spatacus",
+    "version": "2.0.4",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "react",
+        "native",
+        "amap",
+        "location"
+    ],
+    "main": "main.js",
+    "dependencies": {
+        "prop-types": "15.6.1",
+        "react-amap": "^1.2.8"
+    },
+    "description": "React Native AMap component for iOS + Android +Web"
+}

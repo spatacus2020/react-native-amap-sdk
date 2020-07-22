@@ -1,0 +1,50 @@
+apply plugin: 'com.android.library'
+
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion "28.0.3"
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+}
+
+buildscript {
+    ext.kotlin_version = '1.2.41'
+
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.4.2'
+    }
+}
+
+
+allprojects {
+    repositories {
+        mavenLocal()
+        google()
+        jcenter()
+        mavenCentral()
+        maven { url "$projectDir/../node_modules/react-native/android" }
+    }
+}
+
+
+dependencies {
+    compile 'com.android.support:appcompat-v7:23.1.0'
+    compile files('libs/AMap_Search_V4.0.0_20170111.jar')
+    compile files('libs/AMap_Location_V3.3.0_20170118.jar')
+    compile 'com.facebook.react:react-native:+'
+}
