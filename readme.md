@@ -16,22 +16,22 @@ amap 的文档参考https://github.com/qiuxiang/react-native-amap3d， 改了  m
 package.json的depencency中添加：
 
 ```
-  "@spatacus/react-native-amap-sdk": "2.0.6"
+  "react-native-amap-sdk-spatacus": "2.0.6"
 ```
 
     或者
 
-    npm install @spatacus/react-native-amap-sdk --save
+    npm install react-native-amap-sdk-spatacus --save
 
-    yarn add @spatacus/react-native-amap-sdk
+    yarn add react-native-amap-sdk-spatacus
 
 - 项目导入
 
  1.iOS 建议使用cocoapods依赖方式， `Podfile`文件添加如下
 
 ```
-  pod 'react-native-amap-sdk/LocationAmap', :path => '../node_modules/@spatacus/react-native-amap-sdk/ios'
-  pod 'react-native-amap-sdk/Map3dAmap', :path => '../node_modules/@spatacus/react-native-amap-sdk/ios'
+  pod 'react-native-amap-sdk/LocationAmap', :path => '../node_modules/react-native-amap-sdk-spatacus/ios'
+  pod 'react-native-amap-sdk/Map3dAmap', :path => '../node_modules/react-native-amap-sdk-spatacus/ios'
 ```
 然后执行 `pod upodate `方法
 
@@ -41,11 +41,11 @@ package.json的depencency中添加：
   ```
   // 只有poi 和 获取 定位坐标信息的， 没有地图组件
   include ':react-native-amap-sdk'
-  project(':react-native-amap-sdk').projectDir = new File(rootProject.projectDir, '../node_modules/@spatacus/react-native-amap-sdk/android/locationamap')
+  project(':react-native-amap-sdk').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-amap-sdk-spatacus/android/locationamap')
 
   // 只有地图相关控件（如mark,折线,多边围栏等）
   include ':react-native-3damap-sdk'
-  project(':react-native-3damap-sdk').projectDir = new File(rootProject.projectDir, '../node_modules/@spatacus/react-native-amap-sdk/android/map3damap')
+  project(':react-native-3damap-sdk').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-amap-sdk-spatacus/android/map3damap')
   ```
 
   在application的app模块下的build.gradle 中添加如下
@@ -127,7 +127,7 @@ AppDelegate类`-[AppDelegate application:didFinishLaunchingWithOptions:]`方法�
 **  使用说明  **
 
 ```
-import {fetchLocation} from '@spatacus/react-native-amap-sdk';
+import {fetchLocation} from 'react-native-amap-sdk-spatacus';
 
 ···
  fetchLocation((lp, error) => {
@@ -178,7 +178,7 @@ amap 的文档参考https://github.com/qiuxiang/react-native-amap3d， 改了  m
 ** 使用说明 **
 
 ```
- import {AMapGeocode} from '@spatacus/react-native-amap-sdk';
+ import {AMapGeocode} from 'react-native-amap-sdk-spatacus';
 
 ...
 // 根据地址和城市信息进行地理编码
@@ -228,7 +228,7 @@ list中的返回对象参数信息如下：
 根据经纬度进行逆地理编码
 
 ```
-import {AMapReGeocode} from '@spatacus/react-native-amap-sdk';
+import {AMapReGeocode} from 'react-native-amap-sdk-spatacus';
 ...
   const latitude = '30.179339'  
   const longitude =  '120.14156'
@@ -249,7 +249,7 @@ import {AMapReGeocode} from '@spatacus/react-native-amap-sdk';
 
 ```
 import { AMapPOISearchPage,AMapPOISearch
- } from '@spatacus/react-native-amap-sdk';
+ } from 'react-native-amap-sdk-spatacus';
 
  ...
  
@@ -335,7 +335,7 @@ suggestions:[] // 关键字建议列表和城市建议列表
 支持使用高德地图导航，iOS可选自带地图导航
 
 ```
-import {mapNavigation} from '@spatacus/react-native-amap-sdk';
+import {mapNavigation} from 'react-native-amap-sdk-spatacus';
 
 ...
 
@@ -368,7 +368,7 @@ dlon:120.083468}
 支持使用高德地图web获取当前位置
 
 ```
-import { setAmapKey, fetchLocation } from '@spatacus/react-native-amap-sdk';
+import { setAmapKey, fetchLocation } from 'react-native-amap-sdk-spatacus';
 
 setAmapKey('xxxx', 'AMap.Geocoder') // 如果没有引入地图script，则必须先设置 地图的key
 
@@ -421,7 +421,7 @@ lp ：相关当前定位信息，与react-native的相关参数并不完全一�
 
 ### 导入地图模块
 ```jsx
-import { MapView } from  '@spatacus/react-native-amap-sdk';
+import { MapView } from  'react-native-amap-sdk-spatacus';
 ```
 
 ### 基本用法
@@ -489,7 +489,7 @@ const coordinate = {
 
     module.exports = {
     dependencies: {
-      '@spatacus/react-native-amap-sdk': {
+      'react-native-amap-sdk-spatacus': {
         platforms: {
           android: null
         },

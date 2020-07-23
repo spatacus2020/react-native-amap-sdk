@@ -7,10 +7,10 @@
         "app",
         "readme.md"
     ],
-    "name": "@spatacus/react-native-amap-sdk",
+    "name": "react-native-amap-sdk-spatacus",
     "license": "MIT",
     "author": "spatacus",
-    "version": "2.0.6",
+    "version": "2.0.7",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
